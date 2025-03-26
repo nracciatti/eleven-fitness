@@ -1,30 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elleven Fitnes</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elleven Fitness</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="banner-principal">
-            <div class="banner-contenido">
-                <h1>TRANSFORMA TU CUERPO, <span>TRANSFORMA TU VIDA</span></h1>
-                <p>Entrenamiento personalizado para alcanzar tus objetivos fitness.</p>
+      <section class="banner-principal">
+        <div class="banner-contenido">
+          <h1>TRANSFORMA TU CUERPO, <span>TRANSFORMA TU VIDA</span></h1>
+          <p>
+            Entrenamiento personalizado para alcanzar tus objetivos fitness.
+          </p>
+        </div>
+        <a href="#contacto" class="btn-principal">PRIMERA SESIÓN GRATIS</a>
+      </section>
+      <section class="servicios" id="servicios">
+        <div class="contenedor">
+          <div class="encabezado-seccion">
+            <h2>SERVICIOS <span>PERSONALIZADOS</span></h2>
+            <p>
+              Programas de entrenamiento adaptados a tus objetivos y necesidades
+            </p>
+          </div>
+
+          <div class="grid-servicios">
+            <!-- Servicio 1 -->
+            <div class="tarjeta-servicio">
+              <div class="icono-servicio">
+                <i class="fas fa-dumbbell"></i>
+              </div>
+              <h3>Entrenamiento Individual</h3>
+              <p>
+                El entrenamiento individual está diseñado para quienes buscan
+                una atención completamente personalizada y un seguimiento
+                detallado de su progreso.
+              </p>
+              <ul class="caracteristicas-servicio">
+                <li>Plan 100% personalizado</li>
+                <li>Atención exclusiva</li>
+                <li>Resultados optimizados</li>
+                <li>Motivación personalizada</li>
+              </ul>
+              <a
+                href="#"
+                class="btn-secundario abrir-modal"
+                data-modal="modal-servicio-1"
+                >Más información</a
+              >
             </div>
-            <a href="#contacto" class="btn-principal">PRIMERA SESIÓN GRATIS</a>
-        </section>
+
+            <div class="tarjeta-servicio">
+              <div class="icono-servicio">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>Entrenamiento Grupal</h3>
+              <p>
+                El entrenamiento grupal es ideal para quienes disfrutan del
+                ejercicio en equipo y buscan una experiencia dinámica y
+                motivadora.
+              </p>
+              <ul class="caracteristicas-servicio">
+                <li>Energía y motivación</li>
+                <li>Menor costo</li>
+                <li>Interacción social</li>
+                <li>Variedad de ejercicios</li>
+              </ul>
+              <a
+                href="#"
+                class="btn-secundario abrir-modal"
+                data-modal="modal-servicio-2"
+                >Más información</a
+              >
+            </div>
+
+            <div class="tarjeta-servicio">
+              <div class="icono-servicio">
+                <i class="fas fa-apple-alt"></i>
+              </div>
+              <h3>Asesoría Nutricional</h3>
+              <p>
+                Plan nutricional completo que complementa tu entrenamiento para
+                maximizar resultados y mejorar tu salud general.
+              </p>
+              <ul class="caracteristicas-servicio">
+                <li>Análisis de hábitos alimenticios</li>
+                <li>Plan personalizado según objetivos</li>
+                <li>Recetas y alternativas saludables</li>
+                <li>Ajustes mensuales del plan</li>
+              </ul>
+              <a
+                href="#"
+                class="btn-secundario abrir-modal"
+                data-modal="modal-servicio-3"
+                >Más información</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
-</body>
+    <!-- Modales para servicios -->
+    <div class="overlay-modal" id="overlay-modal"></div>
+
+    <!-- Modal Servicio 1 -->
+    <div class="modal" id="modal-servicio-1">
+      <div class="contenido-modal">
+        <div class="encabezado-modal">
+          <h3>Entrenamiento Individual</h3>
+          <button class="cerrar-modal">&times;</button>
+        </div>
+        <div class="cuerpo-modal">
+          <p>
+            El entrenamiento individual está diseñado para quienes buscan una
+            atención completamente personalizada y un seguimiento detallado de
+            su progreso.
+          </p>
+
+          <h4>¿Qué incluye?</h4>
+          <ul>
+            <li>
+              <strong><span>Plan 100% personalizado</span>:</strong> Rutinas
+              adaptadas a tu nivel, objetivos y necesidades.
+            </li>
+            <li>
+              <strong><span>Atención exclusiva</span>:</strong> Corrección de
+              técnica en tiempo real y ajustes inmediatos en cada ejercicio.
+            </li>
+            <li>
+              <strong><span>Mayor flexibilidad</span>:</strong> Sesiones
+              adaptadas a tu disponibilidad horaria.
+            </li>
+            <li>
+              <strong><span>Seguimiento constante</span>:</strong> Monitoreo de
+              tu progreso y ajustes según sea necesario.
+            </li>
+            <li>
+              <strong><span>Técnica correcta</span>:</strong> Enfoque en la
+              ejecución adecuada para prevenir lesiones.
+            </li>
+          </ul>
+
+          <h4>Duración y frecuencia recomendada</h4>
+          <p>
+            Sesiones de 60 minutos, 2-3 veces por semana para resultados
+            óptimos.
+          </p>
+
+          <div class="precio-modal">
+            <span>Desde $8.000 por sesión</span>
+            <span>Paquetes disponibles con descuento</span>
+          </div>
+        </div>
+        <div class="pie-modal">
+          <a href="#contacto" class="btn-principal">Reservar sesión</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Servicio 2 -->
+    <div class="modal" id="modal-servicio-2">
+      <div class="contenido-modal">
+        <div class="encabezado-modal">
+          <h3>Entrenamiento en Grupos</h3>
+          <button class="cerrar-modal">&times;</button>
+        </div>
+        <div class="cuerpo-modal">
+          <p>
+            El entrenamiento grupal es ideal para quienes disfrutan del
+            ejercicio en equipo y buscan una experiencia dinámica y motivadora.
+          </p>
+
+          <h4>¿Qué incluye?</h4>
+          <ul>
+            <li>
+              <strong><span>Energía y motivación:</span></strong> Entrenar en
+              grupo genera un ambiente estimulante y competitivo.
+            </li>
+            <li>
+              <strong><span>Menor costo:</span></strong> Una opción más
+              accesible sin perder la calidad del entrenamiento.
+            </li>
+            <li>
+              <strong><span>Interacción social:</span></strong> Compartir la
+              experiencia con otros hace que el entrenamiento sea más
+              entretenido.
+            </li>
+            <li>
+              <strong><span>Variedad de ejercicios</span></strong> Sesiones
+              dinámicas que combinan diferentes metodologías de entrenamiento.
+            </li>
+            <li>
+              <strong><span>Resultados en equipo:</span></strong> Alcanzar
+              objetivos personales dentro de un grupo que impulsa el esfuerzo y
+              la constancia.
+            </li>
+          </ul>
+
+          <h4>Duración y frecuencia recomendada</h4>
+          <p>
+            Sesiones de 60 minutos, 2 veces por semana para resultados
+            consistentes.
+          </p>
+
+          <div class="precio-modal">
+            <span>Desde $XX por persona/sesión</span>
+            <span>Descuentos para grupos completos</span>
+          </div>
+        </div>
+        <div class="pie-modal">
+          <a href="#contacto" class="btn-principal">Reservar sesión</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Servicio 3 -->
+    <div class="modal" id="modal-servicio-3">
+      <div class="contenido-modal">
+        <div class="encabezado-modal">
+          <h3>Asesoría Nutricional</h3>
+          <button class="cerrar-modal">&times;</button>
+        </div>
+        <div class="cuerpo-modal">
+          <p>
+            Una buena alimentación es clave para potenciar el rendimiento y
+            optimizar los resultados del entrenamiento. Nuestra asesoría
+            nutricional deportiva está diseñada para complementar tu rutina y
+            ayudarte a alcanzar tus objetivos de forma eficiente.
+          </p>
+
+          <h4>¿Qué incluye?</h4>
+          <ul>
+            <li>
+              <strong><span>Plan nutricional personalizado:</span></strong>
+              Adaptado a tus necesidades energéticas y objetivos físicos.
+            </li>
+            <li>
+              <strong><span>Optimización del rendimiento:</span></strong>
+              Estrategias alimentarias para mejorar fuerza, resistencia y
+              recuperación.
+            </li>
+            <li>
+              <strong><span>Guía en suplementación:</span></strong>
+              Recomendaciones seguras y efectivas según tu tipo de
+              entrenamiento.
+            </li>
+            <li>
+              <strong><span>Seguimiento y ajustes:</span></strong> OEvaluación
+              continua para adaptar el plan a tu evolución.
+            </li>
+            <li>
+              <strong><span>Educación nutricional:</span></strong> Aprendé a
+              alimentarte correctamente para mantener resultados sostenibles.
+            </li>
+          </ul>
+
+          <h4>Proceso de asesoramiento</h4>
+          <p>
+            Consulta inicial de 60 minutos, seguimiento quincenal de 30 minutos
+            durante el primer mes, y ajustes mensuales posteriores.
+          </p>
+
+          <div class="precio-modal">
+            <span>Consulta inicial: $XX</span>
+            <span>Seguimiento mensual: $XX</span>
+          </div>
+        </div>
+        <div class="pie-modal">
+          <a href="#contacto" class="btn-principal">Agendar consulta</a>
+        </div>
+      </div>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
 </html>
