@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --naranja-principal: #ff5722;
+  --naranja-secundario: #ff8a65;
+  --negro-principal: #212121;
+  --gris-oscuro: #424242;
+  --gris-claro: #f5f5f5;
+  --blanco: #ffffff;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: var(--gris-claro);
+  color: var(--negro-principal);
+}
+
+header {
+  background-color: var(--negro-principal);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin: 0 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blanco);
+  font-weight: 500;
+  transition: color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+a:hover {
+  color: var(--naranja-principal);
+}
+
+header::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: var(--naranja-principal);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Banner principal */
+
+.banner-principal{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/practica/img/img-banner.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.banner-contenido{
+  max-width: 800px;
+  color: var(--blanco);
+  padding: 0 20px;
+}
+
+.banner-contenido h1{
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.banner-contenido h1 span {
+  color: var(--naranja-principal);
+  display: block; /* Hace que "TRANSFORMA TU VIDA" aparezca en una nueva línea */
+}
+
+.banner-contenido p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
