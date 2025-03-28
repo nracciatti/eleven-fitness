@@ -126,7 +126,7 @@ body {
 
 .banner-principal {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/eleven-fitness/img/img-banner.jpg);
+    url(/img/img-banner.jpg);
   height: 80vh;
   background-size: cover;
   background-position: center;
