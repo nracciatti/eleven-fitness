@@ -1,3 +1,52 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Elementos del menú
+  const botonMenu = document.getElementById("boton-menu");
+  const menu = document.getElementById("menu");
+  const body = document.body;
+
+  // Crear overlay para cerrar el menú al hacer clic fuera
+  const overlay = document.createElement("div");
+  overlay.className = "overlay";
+  body.appendChild(overlay);
+
+  // Función para alternar el menú
+  function toggleMenu() {
+    botonMenu.classList.toggle("activo");
+    menu.classList.toggle("activo");
+    overlay.classList.toggle("activo");
+
+    // Bloquear scroll cuando el menú está abierto
+    if (menu.classList.contains("activo")) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "";
+    }
+  }
+
+  // Event listener para el botón del menú
+  botonMenu.addEventListener("click", toggleMenu);
+
+  // Event listener para el overlay
+  overlay.addEventListener("click", toggleMenu);
+
+  // Event listener para los enlaces del menú
+  const menuLinks = menu.querySelectorAll("a");
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      if (menu.classList.contains("activo")) {
+        toggleMenu();
+      }
+    });
+  });
+
+  // Cerrar menú al redimensionar la ventana a un tamaño grande
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 992 && menu.classList.contains("activo")) {
+      toggleMenu();
+    }
+  });
+});
+
 // Seleccionar elementos
 const botonesAbrir = document.querySelectorAll(".abrir-modal");
 const botonesCerrar = document.querySelectorAll(".cerrar-modal");
