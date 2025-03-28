@@ -53,6 +53,11 @@ const botonesCerrar = document.querySelectorAll(".cerrar-modal");
 const overlay = document.getElementById("overlay-modal");
 const modales = document.querySelectorAll(".modal");
 
+// AOS
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init();
+});
+
 // Función para abrir modal
 function abrirModal(id) {
   // Ocultar todos los modales primero
@@ -102,4 +107,42 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
     cerrarModales();
   }
+});
+
+// Función para animar contadores
+function animateCounter(element, target, duration) {
+  let start = 0;
+  const increment = target / (duration / 16); // 16ms es aproximadamente 60fps
+
+  function updateCounter() {
+    start += increment;
+    if (start < target) {
+      element.textContent = Math.floor(start);
+      requestAnimationFrame(updateCounter);
+    } else {
+      element.textContent = target;
+    }
+  }
+
+  updateCounter();
+}
+
+// Detectar y animar contadores
+const counters = document.querySelectorAll(".counter");
+const counterObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const element = entry.target;
+        const target = parseInt(element.getAttribute("data-target"));
+        animateCounter(element, target, 2000); // 2000ms = 2 segundos
+        counterObserver.unobserve(element);
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+counters.forEach((counter) => {
+  counterObserver.observe(counter);
 });

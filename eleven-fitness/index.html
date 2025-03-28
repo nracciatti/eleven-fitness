@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="shortcut icon" href="./img/eleveen-fitness.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -47,17 +48,26 @@
     </header>
     <main>
       <section class="banner-principal">
-        <div class="banner-contenido">
+        <div
+          class="banner-contenido"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h1>TRANSFORMA TU CUERPO, <span>TRANSFORMA TU VIDA</span></h1>
           <p>
             Entrenamiento personalizado para alcanzar tus objetivos fitness.
           </p>
         </div>
-        <a href="#contacto" class="btn-principal">PRIMERA SESIÓN GRATIS</a>
+        <a
+          href="https://wa.me/+5491166546569?text=Hola,%20estoy%20interesado%20en%20la%20primera%20sesión%20gratis"
+          target="_blank"
+          class="btn-principal"
+          >PRIMERA SESIÓN GRATIS</a
+        >
       </section>
       <section class="servicios" id="servicios">
         <div class="contenedor">
-          <div class="encabezado-seccion">
+          <div class="encabezado-seccion" data-aos="fade-up">
             <h2>SERVICIOS <span>PERSONALIZADOS</span></h2>
             <p>
               Programas de entrenamiento adaptados a tus objetivos y necesidades
@@ -148,11 +158,19 @@
           </div>
 
           <div class="contenido-sobre-mi">
-            <div class="imagen-sobre-mi">
+            <div
+              class="imagen-sobre-mi"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <img src="./img/mate-sentadilla.jpeg" />
             </div>
 
-            <div class="texto-sobre-mi">
+            <div
+              class="texto-sobre-mi"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <h3>Hola, soy <span>Mateo Llorens</span></h3>
               <p class="destacado">
                 Entrenador personal certificado especializado en transformación
@@ -192,7 +210,10 @@
                 </p>
               </div>
 
-              <a href="#contacto" class="btn-principal"
+              <a
+                href="https://wa.me/+5491166546569?text=Hola,%20estoy%20interesado%20en%20tus%20servicios%20de%20entrenamiento%20personal"
+                target="_blank"
+                class="btn-principal"
                 >Comienza tu transformación</a
               >
             </div>
@@ -208,7 +229,11 @@
 
           <div class="slider-testimonios">
             <!-- Testimonio 1 -->
-            <div class="tarjeta-testimonio">
+            <div
+              class="tarjeta-testimonio"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            >
               <div class="contenido-testimonio">
                 <div class="estrellas">
                   <i class="fas fa-star"></i>
@@ -231,7 +256,11 @@
             </div>
 
             <!-- Testimonio 2 -->
-            <div class="tarjeta-testimonio">
+            <div
+              class="tarjeta-testimonio"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div class="contenido-testimonio">
                 <div class="estrellas">
                   <i class="fas fa-star"></i>
@@ -254,7 +283,11 @@
             </div>
 
             <!-- Testimonio 3 -->
-            <div class="tarjeta-testimonio">
+            <div
+              class="tarjeta-testimonio"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <div class="contenido-testimonio">
                 <div class="estrellas">
                   <i class="fas fa-star"></i>
@@ -278,7 +311,11 @@
             </div>
 
             <!-- Testimonio 4 -->
-            <div class="tarjeta-testimonio">
+            <div
+              class="tarjeta-testimonio"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               <div class="contenido-testimonio">
                 <div class="estrellas">
                   <i class="fas fa-star"></i>
@@ -303,12 +340,6 @@
           </div>
         </div>
       </section>
-      <section class="video-entrenamiento">
-        <div class="overlay">
-          
-        <div class="video">
-        </div>
-      </section>
     </main>
     <footer class="footer-simple">
       <div class="contenedor">
@@ -322,9 +353,30 @@
             />
           </div>
 
+          <div class="footer-seccion">
+            <h4>Contacto</h4>
+            <div class="footer-contacto-lista">
+              <div class="contacto-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@nombretrainer.com"
+                  >llorensmateo@yahoo.com</a
+                >
+              </div>
+              <div class="contacto-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+1234567890">+54 9 11 6654-6569</a>
+              </div>
+            </div>
+          </div>
+
           <!-- Redes sociales -->
           <div class="footer-redes">
-            <a href="#" aria-label="Instagram" class="red-social">
+            <a
+              href="https://www.instagram.com/eleveen.fitness/"
+              target="_blank"
+              aria-label="Instagram"
+              class="red-social"
+            >
               <i class="fab fa-instagram"></i>
             </a>
           </div>
@@ -514,9 +566,15 @@
         </div>
       </div>
     </div>
-    <a href="#" id="whatsapp-button" class="whatsapp-float" target="_blank">
+    <a
+      href="https://wa.me/+5491166546569?text=Hola,%20estoy%20interesado%20en%20tus%20servicios%20de%20entrenamiento%20personal"
+      id="whatsapp-button"
+      class="whatsapp-float"
+      target="_blank"
+    >
       <i class="fab fa-whatsapp"></i>
-  </a>
+    </a>
     <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
 </html>
