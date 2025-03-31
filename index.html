@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eleveen Fitness</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./img/eleveen-fitness.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor">
+        <div class="navbar">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="/img/eleveen-fitness.png"
+                alt="Nombre del Trainer"
+                class="logo-img"
+              />
+            </a>
+          </div>
+
+          <!-- Botón hamburguesa (EN MOBILE) -->
+          <button class="boton-menu" id="boton-menu" aria-label="Abrir menú">
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="barra"></span>
+          </button>
+
+          <!-- Menu de navegacion -->
+          <nav class="menu" id="menu">
+            <ul>
+              <li><a href="#" class="active">Inicio</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#sobre-mi">Sobre Mí</a></li>
+              <li><a href="#testimonios">Testimonios</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="banner-principal">
+        <div class="banner-contenido" data-aos="fade-up">
+          <h1>TRANSFORMA TU CUERPO, <span>TRANSFORMA TU VIDA</span></h1>
+          <p>
+            Entrenamiento personalizado para alcanzar tus objetivos fitness.
+          </p>
+        </div>
+        <a
+          href="https://wa.me/+5491166546569?text=Hola,%20estoy%20interesado%20en%20la%20primera%20sesión%20gratis"
+          target="_blank"
+          class="btn-principal"
+          >PRIMERA SESIÓN GRATIS</a
+        >
+      </section>
+      <section class="servicios" id="servicios">
+        <div class="contenedor">
+          <div class="encabezado-seccion">
+            <h2>SERVICIOS <span>PERSONALIZADOS</span></h2>
+            <p>
+              Programas de entrenamiento adaptados a tus objetivos y necesidades
+            </p>
+          </div>
+
+          <div class="grid-servicios" data-aos="fade-up" data-aos-delay="100">
+            <div class="tarjeta-servicio">
+              <div class="icono-servicio">
+                <i class="fas fa-dumbbell"></i>
+              </div>
+              <h3>Entrenamiento Individual</h3>
+              <p>
+                El entrenamiento individual está diseñado para quienes buscan
+                una atención completamente personalizada y un seguimiento
+                detallado de su progreso.
+              </p>
+              <ul class="caracteristicas-servicio">
+                <li>Plan 100% personalizado</li>
+                <li>Atención exclusiva</li>
+                <li>Resultados optimizados</li>
+                <li>Motivación personalizada</li>
+              </ul>
+              <a
+                href="#"
+                class="btn-secundario abrir-modal"
+                data-modal="modal-servicio-1"
+                >Más información</a
+              >
+            </div>
+
+            <div class="tarjeta-servicio">
+              <div class="icono-servicio">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>Entrenamiento Grupal</h3>
+              <p>
+                El entrenamiento grupal es ideal para quienes disfrutan del
+                ejercicio en equipo y buscan una experiencia dinámica y
+                motivadora.
+              </p>
+              <ul class="caracteristicas-servicio">
+                <li>Energía y motivación</li>
+                <li>Menor costo</li>
+                <li>Interacción social</li>
+                <li>Variedad de ejercicios</li>
+              </ul>
+              <a
+                href="#"
+                class="btn-secundario abrir-modal"
+                data-modal="modal-servicio-2"
+                >Más información</a
+              >
+            </div>
+
+            <div class="tarjeta-servicio">
+              <div class="icono-servicio">
+                <i class="fas fa-apple-alt"></i>
+              </div>
+              <h3>Asesoría Nutricional</h3>
+              <p>
+                Plan nutricional completo que complementa tu entrenamiento para
+                maximizar resultados y mejorar tu salud general.
+              </p>
+              <ul class="caracteristicas-servicio">
+                <li>Análisis de hábitos alimenticios</li>
+                <li>Plan personalizado según objetivos</li>
+                <li>Recetas y alternativas saludables</li>
+                <li>Ajustes mensuales del plan</li>
+              </ul>
+              <a
+                href="#"
+                class="btn-secundario abrir-modal"
+                data-modal="modal-servicio-3"
+                >Más información</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sobre-mi" id="sobre-mi">
+        <div class="contenedor">
+          <div class="encabezado-seccion">
+            <h2>SOBRE <span>MÍ</span></h2>
+            <p>
+              Conoce quién soy y cómo puedo ayudarte a alcanzar tus objetivos
+            </p>
+          </div>
+
+          <div class="contenido-sobre-mi">
+            <div class="imagen-sobre-mi">
+              <img src="./img/mate-sentadilla.jpeg" />
+            </div>
+
+            <div class="texto-sobre-mi">
+              <h3>Hola, soy <span>Mateo Llorens</span></h3>
+              <p class="destacado">
+                Entrenador personal certificado especializado en transformación
+                física y bienestar integral.
+              </p>
+
+              <p>
+                Mi pasión por el fitness comenzó hace unos años cuando
+                experimenté mi propia transformación física. Desde entonces, he
+                dedicado mi vida a ayudar a otros a descubrir su mejor versión a
+                través del entrenamiento personalizado y hábitos saludables.
+              </p>
+
+              <p>
+                Creo firmemente que cada persona es única, por lo que mis
+                programas de entrenamiento están diseñados específicamente para
+                adaptarse a tus necesidades, objetivos y estilo de vida. No se
+                trata solo de verse bien, sino de sentirse bien y vivir mejor.
+              </p>
+
+              <div class="certificaciones">
+                <h4>Certificaciones</h4>
+                <ul>
+                  <li>Certificado en Personal Training (NSCA-CPT)</li>
+                  <li>Especialista en Nutrición Deportiva</li>
+                  <li>Certificado en Entrenamiento Funcional</li>
+                </ul>
+              </div>
+
+              <div class="filosofia">
+                <h4>Mi filosofía de entrenamiento</h4>
+                <p>
+                  Mi enfoque se basa en tres pilares fundamentales:
+                  entrenamiento efectivo, nutrición adecuada y mentalidad
+                  positiva. Creo que el verdadero cambio ocurre cuando estos
+                  tres elementos trabajan en armonía.
+                </p>
+              </div>
+
+              <a
+                href="https://wa.me/+5491166546569?text=Hola,%20estoy%20interesado%20en%20tus%20servicios%20de%20entrenamiento%20personal"
+                target="_blank"
+                class="btn-principal"
+                >Comienza tu transformación</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonios" id="testimonios">
+        <div class="contenedor">
+          <div class="encabezado-seccion" data-aos="fade-up">
+            <h2>TESTIMONIOS <span>DE CLIENTES</span></h2>
+            <p>Historias reales de personas que transformaron sus vidas</p>
+          </div>
+
+          <div class="slider-testimonios">
+            <!-- Testimonio 1 -->
+            <div
+              class="tarjeta-testimonio"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              <div class="contenido-testimonio">
+                <div class="estrellas">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="texto-testimonio">
+                  "Después de probar numerosas dietas y rutinas sin éxito,
+                  encontré a Mateo. Su enfoque personalizado y constante
+                  motivación me ayudaron a perder 12kg en 9 meses. Lo mejor es
+                  que ahora tengo las herramientas para mantenerme en forma."
+                </p>
+                <div class="cliente-info">
+                  <h4>Ana</h4>
+                  <p>Cliente desde 2023 • Objetivo: Pérdida de peso</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 2 -->
+            <div
+              class="tarjeta-testimonio"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <div class="contenido-testimonio">
+                <div class="estrellas">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="texto-testimonio">
+                  "Siempre fui delgado y me costaba ganar masa muscular. Mateo
+                  diseñó un programa específico para mi metabolismo y en 4 meses
+                  logré aumentar 8kg de músculo. Su conocimiento en nutrición
+                  fue clave para mi transformación."
+                </p>
+                <div class="cliente-info">
+                  <h4>Nico</h4>
+                  <p>Cliente desde 2021 • Objetivo: Ganancia muscular</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 3 -->
+            <div
+              class="tarjeta-testimonio"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              <div class="contenido-testimonio">
+                <div class="estrellas">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="texto-testimonio">
+                  "A mis 45 años, quería mejorar mi condición física y tener más
+                  energía. Gracias a Mateo no solo logré mis objetivos, sino que
+                  también mejoré mi postura y eliminé dolores crónicos de
+                  espalda que tenía desde hace años. ¡Me siento 10 años más
+                  joven!"
+                </p>
+                <div class="cliente-info">
+                  <h4>Tomas</h4>
+                  <p>Cliente desde 2023 • Objetivo: Bienestar general</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 4 -->
+            <div
+              class="tarjeta-testimonio"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <div class="contenido-testimonio">
+                <div class="estrellas">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="texto-testimonio">
+                  "Mi sueño era completar un maratón, pero no sabía por dónde
+                  empezar. Mateo creó un plan progresivo que me permitió
+                  prepararme adecuadamente. No solo terminé mi primer maratón,
+                  sino que lo hice en un tiempo mejor del que esperaba. Su
+                  conocimiento en preparación deportiva es excepcional."
+                </p>
+                <div class="cliente-info">
+                  <h4>Miguel</h4>
+                  <p>Cliente desde 2023 • Objetivo: Rendimiento deportivo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-simple">
+      <div class="contenedor">
+        <div class="footer-contenido">
+          <!-- Logo o nombre -->
+          <div class="footer-logo">
+            <img
+              src="./img/eleveen-fitness.png"
+              alt="Eleveen Fitness"
+              class="logo-img"
+            />
+          </div>
+
+          <div class="footer-seccion">
+            <h4>Contacto</h4>
+            <div class="footer-contacto-lista">
+              <div class="contacto-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@nombretrainer.com"
+                  >llorensmateo@yahoo.com</a
+                >
+              </div>
+              <div class="contacto-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+1234567890">+54 9 11 6654-6569</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="footer-redes">
+            <a
+              href="https://www.instagram.com/eleveen.fitness/"
+              target="_blank"
+              aria-label="Instagram"
+              class="red-social"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Línea separadora -->
+        <div class="footer-separador"></div>
+
+        <!-- Copyright simple -->
+        <div class="footer-copyright">
+          <p>
+            &copy; <span id="anio-actual">2025</span> Eleveen Fitness. Todos los
+            derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modales para servicios -->
+    <div class="overlay-modal" id="overlay-modal"></div>
+
+    <!-- Modal Servicio 1 -->
+    <div class="modal" id="modal-servicio-1">
+      <div class="contenido-modal">
+        <div class="encabezado-modal">
+          <h3>Entrenamiento Individual</h3>
+          <button class="cerrar-modal">&times;</button>
+        </div>
+        <div class="cuerpo-modal">
+          <p>
+            El entrenamiento individual está diseñado para quienes buscan una
+            atención completamente personalizada y un seguimiento detallado de
+            su progreso.
+          </p>
+
+          <h4>¿Qué incluye?</h4>
+          <ul>
+            <li>
+              <strong><span>Plan 100% personalizado</span>:</strong> Rutinas
+              adaptadas a tu nivel, objetivos y necesidades.
+            </li>
+            <li>
+              <strong><span>Atención exclusiva</span>:</strong> Corrección de
+              técnica en tiempo real y ajustes inmediatos en cada ejercicio.
+            </li>
+            <li>
+              <strong><span>Mayor flexibilidad</span>:</strong> Sesiones
+              adaptadas a tu disponibilidad horaria.
+            </li>
+            <li>
+              <strong><span>Seguimiento constante</span>:</strong> Monitoreo de
+              tu progreso y ajustes según sea necesario.
+            </li>
+            <li>
+              <strong><span>Técnica correcta</span>:</strong> Enfoque en la
+              ejecución adecuada para prevenir lesiones.
+            </li>
+          </ul>
+
+          <h4>Duración y frecuencia recomendada</h4>
+          <p>
+            Sesiones de 60 minutos, 2-3 veces por semana para resultados
+            óptimos.
+          </p>
+
+          <div class="precio-modal">
+            <span>Desde $8.000 por sesión</span>
+            <span>Paquetes disponibles con descuento</span>
+          </div>
+        </div>
+        <div class="pie-modal">
+          <a href="#contacto" class="btn-principal">Reservar sesión</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Servicio 2 -->
+    <div class="modal" id="modal-servicio-2">
+      <div class="contenido-modal">
+        <div class="encabezado-modal">
+          <h3>Entrenamiento en Grupos</h3>
+          <button class="cerrar-modal">&times;</button>
+        </div>
+        <div class="cuerpo-modal">
+          <p>
+            El entrenamiento grupal es ideal para quienes disfrutan del
+            ejercicio en equipo y buscan una experiencia dinámica y motivadora.
+          </p>
+
+          <h4>¿Qué incluye?</h4>
+          <ul>
+            <li>
+              <strong><span>Energía y motivación:</span></strong> Entrenar en
+              grupo genera un ambiente estimulante y competitivo.
+            </li>
+            <li>
+              <strong><span>Menor costo:</span></strong> Una opción más
+              accesible sin perder la calidad del entrenamiento.
+            </li>
+            <li>
+              <strong><span>Interacción social:</span></strong> Compartir la
+              experiencia con otros hace que el entrenamiento sea más
+              entretenido.
+            </li>
+            <li>
+              <strong><span>Variedad de ejercicios</span></strong> Sesiones
+              dinámicas que combinan diferentes metodologías de entrenamiento.
+            </li>
+            <li>
+              <strong><span>Resultados en equipo:</span></strong> Alcanzar
+              objetivos personales dentro de un grupo que impulsa el esfuerzo y
+              la constancia.
+            </li>
+          </ul>
+
+          <h4>Duración y frecuencia recomendada</h4>
+          <p>
+            Sesiones de 60 minutos, 2 veces por semana para resultados
+            consistentes.
+          </p>
+
+          <div class="precio-modal">
+            <span>Desde $XX por persona/sesión</span>
+            <span>Descuentos para grupos completos</span>
+          </div>
+        </div>
+        <div class="pie-modal">
+          <a href="#contacto" class="btn-principal">Reservar sesión</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Servicio 3 -->
+    <div class="modal" id="modal-servicio-3">
+      <div class="contenido-modal">
+        <div class="encabezado-modal">
+          <h3>Asesoría Nutricional</h3>
+          <button class="cerrar-modal">&times;</button>
+        </div>
+        <div class="cuerpo-modal">
+          <p>
+            Una buena alimentación es clave para potenciar el rendimiento y
+            optimizar los resultados del entrenamiento. Nuestra asesoría
+            nutricional deportiva está diseñada para complementar tu rutina y
+            ayudarte a alcanzar tus objetivos de forma eficiente.
+          </p>
+
+          <h4>¿Qué incluye?</h4>
+          <ul>
+            <li>
+              <strong><span>Plan nutricional personalizado:</span></strong>
+              Adaptado a tus necesidades energéticas y objetivos físicos.
+            </li>
+            <li>
+              <strong><span>Optimización del rendimiento:</span></strong>
+              Estrategias alimentarias para mejorar fuerza, resistencia y
+              recuperación.
+            </li>
+            <li>
+              <strong><span>Guía en suplementación:</span></strong>
+              Recomendaciones seguras y efectivas según tu tipo de
+              entrenamiento.
+            </li>
+            <li>
+              <strong><span>Seguimiento y ajustes:</span></strong> OEvaluación
+              continua para adaptar el plan a tu evolución.
+            </li>
+            <li>
+              <strong><span>Educación nutricional:</span></strong> Aprendé a
+              alimentarte correctamente para mantener resultados sostenibles.
+            </li>
+          </ul>
+
+          <h4>Proceso de asesoramiento</h4>
+          <p>
+            Consulta inicial de 60 minutos, seguimiento quincenal de 30 minutos
+            durante el primer mes, y ajustes mensuales posteriores.
+          </p>
+
+          <div class="precio-modal">
+            <span>Consulta inicial: $XX</span>
+            <span>Seguimiento mensual: $XX</span>
+          </div>
+        </div>
+        <div class="pie-modal">
+          <a href="#contacto" class="btn-principal">Agendar consulta</a>
+        </div>
+      </div>
+    </div>
+    <a
+      href="https://wa.me/+5491166546569?text=Hola,%20estoy%20interesado%20en%20tus%20servicios%20de%20entrenamiento%20personal"
+      id="whatsapp-button"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </body>
+</html>
